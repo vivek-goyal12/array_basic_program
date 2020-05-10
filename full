@@ -1,0 +1,13 @@
+package practice;
+import java.io.*;
+import java.util.*;
+
+
+
+public class Full {
+    public static void main(String[] args) {
+        int [] arr = {1,2,3,4,45};
+        String s = Arrays.toString(arr);
+        System.out.println("full array print"+ s);
+    }
+}
