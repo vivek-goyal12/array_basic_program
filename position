@@ -1,0 +1,32 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Position {
+    public static void main(String[] args) {
+        int n; // size of array
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        int[] c = new int[n];
+
+        boolean m = false;
+        for (int j = 0; j < c.length; j++) {
+            c[j] = sc.nextInt();// elemnts user input
+        }
+        int i = sc.nextInt();// position by user
+
+        for (int j = 0; j < c.length; j++) {
+            if (i == j) {
+                m = true;
+            }
+        }
+        if (m == true) {
+
+            System.out.println(c[i]);
+        }
+        else {
+            System.out.println("position is not found ");
+        }
+
+    }
+}
