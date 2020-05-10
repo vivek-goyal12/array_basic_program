@@ -1,0 +1,37 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Condition {
+    public static void main(String[] args) {
+        int size;// size of array
+        Scanner sc = new Scanner(System.in);
+        size = sc.nextInt(); //  user input of array size
+
+        int[] c = new int[size]; // make an empety array c (array name) of size n
+        int x = sc.nextInt();// a number user input
+        for (int i = 0; i < c.length; i++) {
+           c[i] = sc.nextInt(); // user input of elements of array c
+       }
+        boolean m = false;
+        //int [] c= {1,2,3,4,5};
+        for (int i = 0; i < c.length; i++) {
+
+            if (x == c[i]) {
+                m = true;
+            }
+        }
+            if(m==true){
+
+                System.out.println("element is found ");
+
+
+            }
+            else {
+                System.out.println("element is not found");
+            }
+
+
+
+    }
+}
